@@ -1,4 +1,8 @@
-# Alfred - Majordome de Batman
+# Diagrammes Alfred - Majordome de Batman
+## Diagramme de cas d'utilisation
+![diagramme UC](./Diagram/UC.PNG)
+
+# Sujet original :  Alfred - Majordome de Batman
 
 L’idée est de créer un système qui viendra rendre les services suivants :
 

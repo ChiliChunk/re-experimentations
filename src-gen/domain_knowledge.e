@@ -1,23 +1,27 @@
 note
-	EIS: "src=main.rsml", "ref=Environment", "type=trace"
+	EIS: "src=My.rsml", "ref=Environment", "type=trace"
 	description: "[
 	This class contains the domain knowledge that will be used by requirements.
 ]"
 class DOMAIN_KNOWLEDGE
 feature
-	number_of_rotors : DOUBLE
-	number_of_clamp : DOUBLE
-	max_weight_of_parcel : DOUBLE
-	max_size_of_parcel : DOUBLE
-	low_battery_status : DOUBLE
-	minimum_safe_height : DOUBLE
-	minimum_safe_height : DOUBLE
+	temperature : DOUBLE
+	humidite : DOUBLE
+	codeux : DOUBLE
+	courant_air : DOUBLE
+	conso_elec : DOUBLE
+	prod_elec : DOUBLE
+	q_eau_chaude : DOUBLE
+	car_charge : DOUBLE
+	r_prod_conso : DOUBLE
 invariant
-	number_of_rotors_is_4: number_of_rotors = 4 -- 
-	number_of_clamp_is_1: number_of_clamp = 1 -- 
-	max_weight_of_parcel_is_10: max_weight_of_parcel = 10 -- kg
-	max_size_of_parcel_is_1: max_size_of_parcel = 1 -- m
-	low_battery_status_is_10: low_battery_status = 10 -- percent
-	minimum_safe_height_is_50: minimum_safe_height = 50 -- m
-	minimum_safe_height_is_50: minimum_safe_height = 50 -- m
+	temperature_is_in_0_and_65: temperature > 0 and temperature < 65
+	humidite_is_in_0_and_100: humidite > 0 and humidite < 100
+	codeux_is_in_0_and_3: codeux > 0 and codeux < 3
+	courant_air_is_in_0_and_50: courant_air > 0 and courant_air < 50
+	conso_elec_is_greater_than_0: conso_elec > 0 -- Wh/min
+	prod_elec_is_greater_than_0: prod_elec > 0 -- Wh/min
+	q_eau_chaude_is_greater_than_0: q_eau_chaude > 0 -- mcube
+	car_charge_is_in_0_and_100: car_charge > 0 and car_charge < 100
+	r_prod_conso_is_in_0_and_100: r_prod_conso > 0 and r_prod_conso < 100
 end
