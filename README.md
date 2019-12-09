@@ -8,6 +8,10 @@
 ## Digramme de Requirement
 ![Requirement](./Diagram/req.png)
 
+## Diagramme de sequence
+Detail du cas d'utilisation de la consultation de la qualité de l'air par diagramme de séquence
+![Sequence](./Diagram/seq.PNG)
+
 # Sujet original :  Alfred - Majordome de Batman
 
 L’idée est de créer un système qui viendra rendre les services suivants :
