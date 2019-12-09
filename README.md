@@ -2,6 +2,12 @@
 ## Diagramme de cas d'utilisation
 ![diagramme UC](./Diagram/UC.PNG)
 
+## BDD
+![DBB](./Diagram/BDD.png)
+
+## Digramme de Requirement
+![Requirement](./Diagram/req.png)
+
 # Sujet original :  Alfred - Majordome de Batman
 
 L’idée est de créer un système qui viendra rendre les services suivants :
